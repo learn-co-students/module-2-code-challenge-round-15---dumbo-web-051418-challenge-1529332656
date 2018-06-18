@@ -1,0 +1,6 @@
+<h2>Appearances</h2>
+
+<% @appearances.each do |appearance| %>
+<%= link_to appearance.rating, appearance.episode_id, appearance.guest_id, appearance_path(appearance) %>
+<br>
+<% end %>
